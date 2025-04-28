@@ -1,5 +1,6 @@
 AUTHOR = 'alaModo'
 SITENAME = 'Лёгкие системы'
+SITEURL = ""
 SITEURL = "https://g-yury.github.io"
 
 DEFAULT_LANG = 'ru'

@@ -212,8 +212,8 @@ main {
 
 .scroll-indicator {
     position: fixed;
-    bottom: 20px;
-    left: 50%;
+    bottom: 40px;
+    left: 43%;
     transform: translateX(-50%);
     color: #777;
     animation: bounce 2s infinite; /* Анимация подпрыгивания */
