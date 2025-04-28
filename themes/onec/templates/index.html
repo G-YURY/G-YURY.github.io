@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }} - Главная страница{% endblock %}
+
+{% block content %}
+    <article class="page">
+        <h1>{{ SITENAME }}</h1>
+        <p>Добро пожаловать на сайт!</p>
+        {% if page %}
+            {{ page.content }}
+        {% endif %}
+    </article>
+{% endblock %}

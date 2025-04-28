@@ -1,0 +1,232 @@
+/* Общие стили */
+body {
+  font-family: 'PTSans', sans-serif;
+  margin: 0;
+  padding-bottom: 60px; /*  Отступ для контента, чтобы подвал не перекрывал текст */
+  display: flex; /* Делаем body flex-контейнером */
+  flex-direction: column; /* Располагаем элементы вертикально */
+  position: relative;   /*  Необходимо для корректной работы position: fixed у footer */
+  min-height: 100vh;    /*  Занимаем всю высоту экрана */
+}
+
+html {
+  height: 100%; /* Задаем высоту html */
+}
+
+/* Шапка */
+.header {
+  font-family: 'PTSans', sans-serif;
+  display: flex;
+  justify-content: space-between; /* Логотип слева, header__right справа */
+  padding: 20px 0 10px;
+  color: rgb(113, 95, 0);
+  background-color: rgb(255, 222, 65);
+  font-size: 13px;
+  line-height: 20px;
+  position: sticky;  /*  Фиксируем заголовок при прокрутке */
+  top: 0;            /*  Прижимаем к верху экрана */
+  z-index: 100;       /*  Убеждаемся, что заголовок поверх контента */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Добавляем тень снизу */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Располагаем info и navigation вертикально */
+}
+
+.header__logo {
+  border: none;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.header__logo-image {
+  width: 250px;
+}
+
+.header__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0 10px;
+  border-bottom: 2px insert rgb(238, 198, 0);
+  width: 100%;
+}
+
+.header__slogan {
+  display: flex;
+  align-items: center;
+  font-size: 2em; /* Пример: Увеличим размер шрифта */
+  font-weight: bold; /* Пример: Сделаем текст полужирным */
+  color: rgb(113, 95, 0);
+  padding: 50px 0 5px;
+}
+
+.header__slogan-text {
+  font-weight: bold;
+}
+
+.header__slogan-text--main {
+  color: rgb(255, 59, 59);
+}
+
+.header__slogan-text--city {
+  color: rgb(113, 95, 0);
+}
+
+main {
+  flex: 1;
+}
+
+.header__phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  display: inline-block;
+  }
+  
+  .header__phone-block {
+    font-size: 1.8em; /* Пример: Увеличим размер шрифта */
+    font-weight: bold; /* Пример: Сделаем текст полужирным */
+    color: rgb(113, 95, 0);
+    margin-bottom: 5px;
+    }
+    
+.header__phone-number {
+  color: rgb(255, 59, 59);
+  text-decoration: none;
+  display: block;
+}
+
+.header__form {
+  margin-top: 10px;
+}
+
+.header__form-button {
+  color: #fff;
+  background-color: #ee1d24;
+  text-align: center;
+  display: inline-block;
+  line-height: 30px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  width: 100%; /* Занимает всю ширину родителя */
+  cursor: pointer;
+  display: block; /* Чтобы width работал */
+  box-sizing: border-box; /* Чтобы padding не увеличивал ширину */
+}
+
+.header__navigation {
+  border-top: 1px solid #ccc; /* Линия сверху */
+  padding-top: 10px; /* Отступ сверху от линии */
+  margin-top: 10px; /* Отступ сверху от header__info */
+  width: 100%;
+}
+
+.header__navigation-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  }
+  
+  .header__navigation-item {
+  font-family: 'PTSansNarrowBold', sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.header__navigation-link {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.header__navigation-link:hover {
+  text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+main {
+  flex: 1;
+}
+
+/* Подвал */
+.footer {
+  font-family: 'PTSansBold', sans-serif;
+  padding: 20px 0;
+  background-color: rgb(255, 222, 65);
+  text-shadow: 0 1px rgb(255, 255, 130);
+  font-size: 13px;
+  line-height: 20px;
+  justify-content: space-between;
+  text-align: center;
+  position: fixed;       /*  Фиксируем подвал на экране */
+  bottom: 0;             /*  Прижимаем к низу экрана */
+  left: 0;               /*  Прижимаем к левому краю экрана */
+  width: 100%;            /*  Занимает всю ширину экрана */
+  box-sizing: border-box; /*  Чтобы padding не увеличивал ширину */
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2); /*  Тень сверху */
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1100px;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer a {
+  color: rgb(113, 95, 0);
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: rgb(222, 16, 16);
+  text-decoration: underline;
+}
+
+.scroll-indicator {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #777;
+    animation: bounce 2s infinite; /* Анимация подпрыгивания */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    40% {
+        transform: translateY(-10px) translateX(-50%);
+    }
+    60% {
+        transform: translateY(-5px) translateX(-50%);
+    }
+}
