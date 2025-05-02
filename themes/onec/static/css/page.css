@@ -5,6 +5,12 @@
   margin-bottom: 20px;
 }
 
+.page h2 {
+  color: rgb(222, 16, 16);
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
 .page p {
   color: rgb(113, 95, 0);
   font-size: 1.1em;
