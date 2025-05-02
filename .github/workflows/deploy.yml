@@ -23,7 +23,7 @@ jobs:
           pip install pelican Markdown
 
       - name: Generate website
-        run: pelican content -s pelicanconf.py
+        run: pelican content -s publishconf.py
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
