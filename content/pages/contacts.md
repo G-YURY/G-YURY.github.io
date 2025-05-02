@@ -1,6 +1,6 @@
 Title: Контакты
 Date: 2023-10-27
-Slug: contact
+Slug: contacts
 Status: published
 
 ## Контактная информация

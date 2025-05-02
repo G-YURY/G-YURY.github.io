@@ -33,6 +33,9 @@ html {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.flex-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -80,10 +83,6 @@ html {
 
 .header__slogan-text--city {
   color: rgb(113, 95, 0);
-}
-
-main {
-  flex: 1;
 }
 
 .header__phone {
