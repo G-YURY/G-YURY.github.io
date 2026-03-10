@@ -1,8 +1,9 @@
+# publishconf.py
 import sys
 sys.path.append('.')
 from pelicanconf import *
 
-SITEURL = 'https://g-yury.github.io'
+SITEURL = 'https://lite-system.ru'
 RELATIVE_URLS = False
 
 # Включить кэширование для production
