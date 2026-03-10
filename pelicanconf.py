@@ -1,4 +1,4 @@
-# Основные настройки
+# pelicanconf.py
 AUTHOR = 'alaModo'
 SITENAME = 'Лёгкие системы'
 SITEURL = ""
